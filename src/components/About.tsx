@@ -17,15 +17,15 @@ export default function About() {
       {/* Description */}
       <div className="space-y-4 text-gray-400 text-base leading-relaxed">
         <p>
-          Hello! I’m <span className="text-white">Nida Ilyas</span>, a recent graduate from <span className="text-white">George Mason University</span> with a degree in <span className="text-white">Information Technology</span> and a concentration in <span className="text-white">Cybersecurity</span>.
+          Hello! I&rsquo;m <span className="text-white">Nida Ilyas</span>, a recent graduate from <span className="text-white">George Mason University</span> with a degree in <span className="text-white">Information Technology</span> and a concentration in <span className="text-white">Cybersecurity</span>.
         </p>
         <p>
           I hold the <span className="text-white">CompTIA Security+</span> certification and am currently focused on leveling up my software engineering skills — building full-stack web apps and Python-based tools that are clean, secure, and user-friendly.
         </p>
         <p>
-          My goal is to blend strong technical foundations with real-world coding experience to contribute to teams solving meaningful problems. I'm actively looking for <span className="text-white">internships</span> or <span className="text-white">entry-level roles</span> in software engineering or cybersecurity.
+          My goal is to blend strong technical foundations with real-world coding experience to contribute to teams solving meaningful problems. I&rsquo;m actively looking for <span className="text-white">internships</span> or <span className="text-white">entry-level roles</span> in software engineering or cybersecurity.
         </p>
-        <p>Here are some tools I’ve been working with recently:</p>
+        <p>Here are some tools I&rsquo;ve been working with recently:</p>
 
         {/* Tech List */}
         <ul className="grid grid-cols-2 gap-2 mt-4 text-sm font-mono text-accent">

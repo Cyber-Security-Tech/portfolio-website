@@ -3,8 +3,8 @@ import type { Metadata } from 'next'
 import ClientLayout from '@/components/ClientLayout'
 
 export const metadata: Metadata = {
-  title: 'Your Portfolio',
-  description: 'Built with Next.js + Tailwind CSS',
+  title: 'Nida Ilyas',
+  description: 'Portfolio Website – Software Engineering & Cybersecurity',
 }
 
 export default function RootLayout({
@@ -14,7 +14,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-[#0a192f] text-gray-300 font-sans">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
+      <body>
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>

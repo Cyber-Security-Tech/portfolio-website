@@ -19,13 +19,13 @@ export default function Contact() {
 
       {/* Heading & Description */}
       <h3 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-        Let’s Talk
+        Let&rsquo;s Talk
       </h3>
       <p className="text-gray-400 mb-10 leading-relaxed">
-        I’m a recent IT graduate actively seeking <span className="text-white font-medium">internships</span> or <span className="text-white font-medium">entry-level opportunities</span> in software engineering or cybersecurity.
+        I&rsquo;m a recent IT graduate actively seeking <span className="text-white font-medium">internships</span> or <span className="text-white font-medium">entry-level opportunities</span> in software engineering or cybersecurity.
         <br />
         <br />
-        Whether you're hiring, collaborating, or just want to say hi — feel free to reach out!
+        Whether you&rsquo;re hiring, collaborating, or just want to say hi &mdash; feel free to reach out!
       </p>
 
       {/* Email Button */}
