@@ -2,12 +2,14 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import clsx from 'clsx'
+import { motion } from 'framer-motion'
+import LogoIconStatic from './LogoIconStatic'
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isScrolling, setIsScrolling] = useState(false)
+  const [justLanded, setJustLanded] = useState(true)
 
   useEffect(() => {
     let timeout: NodeJS.Timeout
@@ -23,8 +25,15 @@ export default function Navbar() {
       }, 150)
     }
 
+    const glowTimeout = setTimeout(() => {
+      setJustLanded(false)
+    }, 1200)
+
     window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      clearTimeout(glowTimeout)
+    }
   }, [])
 
   const navClasses = clsx(
@@ -37,47 +46,27 @@ export default function Navbar() {
   return (
     <header className={navClasses}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-5 flex items-center justify-between">
-        {/* Left Side: Logo + Email + Icons */}
-        <div className="flex flex-col items-start space-y-1 ml-[-0.5rem]">
-          <span className="text-accent text-3xl font-bold tracking-wider">N</span>
-          <a
-            href="mailto:youremail@example.com"
-            className="text-sm text-gray-400 hover:text-accent transition"
-          >
-            youremail@example.com
-          </a>
-          <div className="flex space-x-3 mt-1">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="text-gray-400 hover:text-accent transition text-xl" />
-            </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="text-gray-400 hover:text-accent transition text-xl" />
-            </a>
-          </div>
-        </div>
+        {/* Logo with glowing effect if just landed */}
+        <motion.div
+          layoutId="logo"
+          whileHover={{ scale: 1.1 }}
+          initial={false}
+          animate={
+            justLanded
+              ? { filter: 'drop-shadow(0 0 15px rgba(0,255,180,0.8))' }
+              : { filter: 'none' }
+          }
+          transition={{ duration: 0.6 }}
+          className="w-10 h-10"
+        >
+          <LogoIconStatic />
+        </motion.div>
 
-        {/* Right Side: Nav Links */}
+        {/* Nav Links */}
         <ul className="hidden sm:flex space-x-8 text-sm text-gray-300 items-center">
-          <li>
-            <Link href="#about" className="hover:text-accent transition">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link href="#projects" className="hover:text-accent transition">
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link href="#blog" className="hover:text-accent transition">
-              Blog
-            </Link>
-          </li>
-          <li>
-            <Link href="#contact" className="hover:text-accent transition">
-              Contact
-            </Link>
-          </li>
+          <li><Link href="#about" className="hover:text-accent transition">About</Link></li>
+          <li><Link href="#projects" className="hover:text-accent transition">Projects</Link></li>
+          <li><Link href="#contact" className="hover:text-accent transition">Contact</Link></li>
           <li>
             <a
               href="/resume.pdf"

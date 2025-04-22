@@ -7,8 +7,8 @@ export const otherProjects = [
     tech: ['Python', 'Flask', 'Amadeus API', 'SQLite', 'SMTP'],
     github: 'https://github.com/Cyber-Security-Tech/flight-deal-finder-web',
     demo: 'https://flight-deal-finder-web.onrender.com',
-    mediaType: 'gif',
-    mediaUrl: '/media/flight-deal-web.gif',
+    mediaType: 'image',
+    mediaUrl: '/media/flight-deal-web.png',
   },
   {
     title: 'PDF to Audiobook Converter',
@@ -109,8 +109,8 @@ export const otherProjects = [
     tech: ['Python', 'Amadeus API', 'SMTP'],
     github: 'https://github.com/Cyber-Security-Tech/flight-deal-finder',
     demo: '',
-    mediaType: 'gif',
-    mediaUrl: '/media/flight-finder-script.gif',
+    mediaType: 'image',
+    mediaUrl: '/media/flight-finder-script.png',
   },
   {
     title: 'Spreadsheet Tools Suite',

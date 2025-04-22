@@ -1,5 +1,7 @@
 'use client'
 
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
+
 export default function Contact() {
   return (
     <section
@@ -28,11 +30,31 @@ export default function Contact() {
 
       {/* Email Button */}
       <a
-        href="mailto:youremail@example.com"
+        href="mailto:nsum280@gmail.com"
         className="inline-block border border-accent text-accent px-6 py-3 font-mono rounded hover:bg-accent hover:text-[#0a192f] transition-all"
       >
-        youremail@example.com
+        nsum280@gmail.com
       </a>
+
+      {/* Social Icons */}
+      <div className="mt-8 flex justify-center space-x-6">
+        <a
+          href="https://github.com/Cyber-Security-Tech"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-400 hover:text-accent transition text-xl"
+        >
+          <FaGithub />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/nida-ilyas-4aa49528b/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-400 hover:text-accent transition text-xl"
+        >
+          <FaLinkedin />
+        </a>
+      </div>
     </section>
   )
 }

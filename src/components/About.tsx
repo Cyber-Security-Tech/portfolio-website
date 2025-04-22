@@ -17,23 +17,23 @@ export default function About() {
       {/* Description */}
       <div className="space-y-4 text-gray-400 text-base leading-relaxed">
         <p>
-          Hello! I’m <span className="text-white">Your Name</span>, a front-end
-          developer passionate about building responsive and accessible web
-          interfaces with a modern, minimal vibe.
+          Hello! I’m <span className="text-white">Nida Ilyas</span>, a recent graduate from <span className="text-white">George Mason University</span> with a degree in <span className="text-white">Information Technology</span> and a concentration in <span className="text-white">Cybersecurity</span>.
         </p>
         <p>
-          My current focus is on React, Next.js, and Tailwind CSS — but I love
-          exploring anything that helps create better digital experiences.
+          I hold the <span className="text-white">CompTIA Security+</span> certification and am currently focused on leveling up my software engineering skills — building full-stack web apps and Python-based tools that are clean, secure, and user-friendly.
+        </p>
+        <p>
+          My goal is to blend strong technical foundations with real-world coding experience to contribute to teams solving meaningful problems. I'm actively looking for <span className="text-white">internships</span> or <span className="text-white">entry-level roles</span> in software engineering or cybersecurity.
         </p>
         <p>Here are some tools I’ve been working with recently:</p>
 
         {/* Tech List */}
         <ul className="grid grid-cols-2 gap-2 mt-4 text-sm font-mono text-accent">
-          <li>JavaScript (ES6+)</li>
-          <li>TypeScript</li>
-          <li>React</li>
-          <li>Next.js</li>
-          <li>Tailwind CSS</li>
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>Node.js</li>
+          <li>React & Next.js</li>
+          <li>PostgreSQL</li>
           <li>Git & GitHub</li>
         </ul>
       </div>
