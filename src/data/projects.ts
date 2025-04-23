@@ -4,7 +4,7 @@ export const featuredProjects = [
     description:
       'A personalized movie ranking site with TMDb API integration. Features genre filtering, search, PostgreSQL backend, CSV import/export, user authentication, and clean visual stats.',
     tech: ['Flask', 'TMDb API', 'PostgreSQL', 'SQLAlchemy', 'Chart.js', 'Jinja2'],
-    github: 'https://github.com/Cyber-Security-Tech/top-10-movies-web',
+    github: 'https://github.com/Cyber-Security-Tech/top10-movies-web',
     demo: 'https://top-10-movies-web.onrender.com',
     mediaType: 'gif',
     mediaUrl: '/media/movies-demo.gif', // path in your public folder
